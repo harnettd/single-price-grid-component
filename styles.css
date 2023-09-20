@@ -7,6 +7,160 @@ html {
   margin-top: 0;
 }
 
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  overflow: hidden;
+  width: 31rem;
+  border-radius: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: auto auto;
+    width: 63.4rem;
+  }
+}
+
+.hero-area {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .hero-area {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}
+
+.hero-title {
+  margin-bottom: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+}
+
+.hero-sub-title {
+  margin-bottom: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+}
+
+.hero-copy {
+  margin-bottom: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(218, 22%, 67%);
+}
+
+.price-area {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: hsl(179, 62%, 43%);
+}
+@media screen and (min-width: 768px) {
+  .price-area {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.price-sub-title {
+  margin-bottom: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.price-container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price-amount {
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.price-frequency {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.price-copy {
+  margin-bottom: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.price-btn {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(71, 73%, 54%);
+}
+
+.features-area {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: hsl(218, 22%, 67%);
+}
+@media screen and (min-width: 768px) {
+  .features-area {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+.features-sub-title {
+  margin-bottom: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.features-copy {
+  margin-bottom: 0.5rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+}
+
 .attribution {
   font-size: 1.1rem;
   text-align: center;
