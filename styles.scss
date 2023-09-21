@@ -65,43 +65,59 @@ $card-width-desktop: 63.4rem;
 }
 
 .hero-area {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2.75rem 1.5rem 3rem 2.5rem;
     background-color: white;
 
     @media screen and (min-width: $breakpoint) {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
+        padding: 4.2rem 2.6rem 3.7rem 4.2rem;
     }
 }
 
 .hero-title {
-    margin-bottom: 1rem;
-    @include font(1.5rem, $bold, $cyan);
+    margin-bottom: 2.6rem;
+    @include font(1.95rem, $bold, $cyan);
+
+    @media screen and (min-width: $breakpoint) {
+        font-size: 2.34rem;
+    }
 }
 
 .hero-sub-title {
-    margin-bottom: 1rem;
-    @include font(1.5rem, $bold, $bright-yellow);
+    margin-bottom: 2rem;
+    @include font(1.48rem, $bold, $bright-yellow);
+
+    @media screen and (min-width: $breakpoint) {
+        margin-bottom: .7rem;
+        font-size: 1.75rem;
+    }
 }
 
 .hero-copy {
-    margin-bottom: 1rem;
-    @include font(1.5rem, $regular, $grayish-blue);
+    margin-bottom: 0;
+    @include font(1.37rem, $regular, $grayish-blue);
+    line-height: 1.9;
+
+    @media screen and (min-width: $breakpoint) {
+        font-size: 1.56rem;
+    }
 }
 
 .price-area {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2.6rem 2.4rem 1.3rem 2.4rem;
     background-color: $cyan;
 
     @media screen and (min-width: $breakpoint) {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+        padding: 3.9rem 3.9rem 3rem 4rem;
     }
 }
 
 .price-sub-title {
-    margin-bottom: 1rem;
-    @include font(1.5rem, $bold, white);
+    margin-bottom: 1.8rem;
+    @include font(1.75rem, $bold, white);
 }
 
 .price-container-flex {
@@ -109,28 +125,36 @@ $card-width-desktop: 63.4rem;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
+    gap: 1.4rem;
 
-    margin-bottom: 1rem;
+    margin-bottom: .9rem;
+
+    @media screen and (min-width: $breakpoint) {
+        gap: 1.1rem;
+    }
 }
 
 .price-amount {
-    @include font(2rem, $bold, white);
+    @include font(3rem, $bold, white);
+
+    @media screen and (min-width: $breakpoint) {
+        font-size: 3.2rem;
+    }
 }
 
 .price-frequency {
-    @include font(1rem, $regular, white);   
+    @include font(1.55rem, $regular, white);   
 }
 
 .price-copy {
-    margin-bottom: 1rem;
-    @include font(1.5rem, $regular, white);
+    margin-bottom: 3rem;
+    @include font(1.56rem, $regular, white);
 }
 
 .price-btn  {
     margin-bottom: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     width: 100%;
 
     text-align: center;
@@ -142,23 +166,24 @@ $card-width-desktop: 63.4rem;
 }
 
 .features-area {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2.5rem 1rem 2.1rem 2.3rem;
     background-color: $grayish-blue;
 
     @media screen and (min-width: $breakpoint) {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        padding: 3.8rem 1rem 2.1rem 3.9rem;
     }
 }
 
 .features-sub-title {
-    margin-bottom: 1rem;
-    @include font(1.5rem, $bold, white);
+    margin-bottom: 1.9rem;
+    @include font(1.8rem, $bold, white);
 }
 
 .features-copy {
-    margin-bottom: 0.5rem;
-    @include font(1.25rem, $regular, white);
+    margin-bottom: 0.4rem;
+    @include font(1.38rem, $regular, white);
 }
 
 
@@ -170,3 +195,30 @@ $card-width-desktop: 63.4rem;
 }
 
 .attribution a { color: hsl(228 45% 44%); }
+
+
+// Development redefinition level
+
+body {
+    background: {
+        image: url("./design/mobile-design.jpg");
+        repeat: no-repeat;
+        position: center top;
+        size: 37.5rem auto;
+    };
+
+    @media screen and (min-width: $breakpoint) {
+        background: {
+            image: url("./design/desktop-design.jpg");
+            size: 144rem auto;
+        }
+    }
+}
+
+.card-wrapper {
+    align-items: flex-start;
+    margin-top: 7.2rem;
+    opacity: .5;
+
+    @media screen and (min-width: $breakpoint) { margin-top: 16.2rem; }
+}
