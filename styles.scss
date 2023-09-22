@@ -12,6 +12,7 @@ $breakpoint: 768px;
 
 // Primary
 $cyan: hsl(179 62% 43%);
+$cyan-low-opacity: hsl(179 62% 43% / .75);
 $bright-yellow: hsl(71 73% 54%);
 
 // Neutral
@@ -143,7 +144,7 @@ $card-width-desktop: 63.4rem;
 }
 
 .price-frequency {
-    @include font(1.55rem, $regular, white);   
+    @include font(1.55rem, $regular, $light-gray);   
 }
 
 .price-copy {
@@ -167,7 +168,7 @@ $card-width-desktop: 63.4rem;
 
 .features-area {
     padding: 2.5rem 1rem 2.1rem 2.3rem;
-    background-color: $grayish-blue;
+    background-color: $cyan-low-opacity;
 
     @media screen and (min-width: $breakpoint) {
         grid-column: 2 / 3;
@@ -183,7 +184,7 @@ $card-width-desktop: 63.4rem;
 
 .features-copy {
     margin-bottom: 0.4rem;
-    @include font(1.38rem, $regular, white);
+    @include font(1.38rem, $regular, $light-gray);
 }
 
 
@@ -199,26 +200,26 @@ $card-width-desktop: 63.4rem;
 
 // Development redefinition level
 
-body {
-    background: {
-        image: url("./design/mobile-design.jpg");
-        repeat: no-repeat;
-        position: center top;
-        size: 37.5rem auto;
-    };
+// body {
+//     background: {
+//         image: url("./design/mobile-design.jpg");
+//         repeat: no-repeat;
+//         position: center top;
+//         size: 37.5rem auto;
+//     };
 
-    @media screen and (min-width: $breakpoint) {
-        background: {
-            image: url("./design/desktop-design.jpg");
-            size: 144rem auto;
-        }
-    }
-}
+//     @media screen and (min-width: $breakpoint) {
+//         background: {
+//             image: url("./design/desktop-design.jpg");
+//             size: 144rem auto;
+//         }
+//     }
+// }
 
-.card-wrapper {
-    align-items: flex-start;
-    margin-top: 7.2rem;
-    opacity: .5;
+// .card-wrapper {
+//     align-items: flex-start;
+//     margin-top: 7.2rem;
+//     opacity: .5;
 
-    @media screen and (min-width: $breakpoint) { margin-top: 16.2rem; }
-}
+//     @media screen and (min-width: $breakpoint) { margin-top: 16.2rem; }
+// }

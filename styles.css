@@ -137,7 +137,7 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 1.55rem;
   font-weight: 400;
-  color: white;
+  color: hsl(204, 43%, 93%);
 }
 
 .price-copy {
@@ -165,7 +165,7 @@ body {
 
 .features-area {
   padding: 2.5rem 1rem 2.1rem 2.3rem;
-  background-color: hsl(218, 22%, 67%);
+  background-color: hsla(179, 62%, 43%, 0.75);
 }
 @media screen and (min-width: 768px) {
   .features-area {
@@ -188,7 +188,7 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 1.38rem;
   font-weight: 400;
-  color: white;
+  color: hsl(204, 43%, 93%);
 }
 
 .attribution {
@@ -198,30 +198,6 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-body {
-  background-image: url("./design/mobile-design.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 37.5rem auto;
-}
-@media screen and (min-width: 768px) {
-  body {
-    background-image: url("./design/desktop-design.jpg");
-    background-size: 144rem auto;
-  }
-}
-
-.card-wrapper {
-  align-items: flex-start;
-  margin-top: 7.2rem;
-  opacity: 0.5;
-}
-@media screen and (min-width: 768px) {
-  .card-wrapper {
-    margin-top: 16.2rem;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
