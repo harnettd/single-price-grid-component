@@ -196,30 +196,3 @@ $card-width-desktop: 63.4rem;
 }
 
 .attribution a { color: hsl(228 45% 44%); }
-
-
-// Development redefinition level
-
-// body {
-//     background: {
-//         image: url("./design/mobile-design.jpg");
-//         repeat: no-repeat;
-//         position: center top;
-//         size: 37.5rem auto;
-//     };
-
-//     @media screen and (min-width: $breakpoint) {
-//         background: {
-//             image: url("./design/desktop-design.jpg");
-//             size: 144rem auto;
-//         }
-//     }
-// }
-
-// .card-wrapper {
-//     align-items: flex-start;
-//     margin-top: 7.2rem;
-//     opacity: .5;
-
-//     @media screen and (min-width: $breakpoint) { margin-top: 16.2rem; }
-// }
